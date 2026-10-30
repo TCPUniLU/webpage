@@ -1,0 +1,358 @@
+/* Site-wide visual refresh and mobile layout.
+   Loaded last on every page so it refines the per-page styles. */
+
+:root {
+    --tcp-accent: #1f5f8b;
+    --tcp-accent-soft: #e8f0f6;
+    --tcp-text: #24292f;
+    --tcp-muted: #5f6b76;
+    --tcp-bg: #f6f7f9;
+    --tcp-card: #ffffff;
+    --tcp-border: #e3e6ea;
+    --tcp-radius: 12px;
+    --tcp-shadow: 0 1px 3px rgba(16, 24, 40, 0.06), 0 1px 2px rgba(16, 24, 40, 0.04);
+    --tcp-shadow-hover: 0 6px 16px rgba(16, 24, 40, 0.08);
+}
+
+/* Base */
+html {
+    scroll-padding-top: 80px;
+}
+
+body {
+    background: var(--tcp-bg);
+    color: var(--tcp-text);
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+p, li, .member-topic, .member-meta, .thesis-meta {
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5,
+.post-title {
+    font-family: "Barlow", "Roboto", sans-serif;
+    color: var(--tcp-text);
+    letter-spacing: -0.01em;
+}
+
+a {
+    color: var(--tcp-accent);
+}
+
+a:hover {
+    color: #174a6c;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.post-title {
+    font-weight: 600;
+    font-size: 2.25rem;
+}
+
+.post-header {
+    margin-bottom: 1.75rem;
+}
+
+.desc {
+    color: var(--tcp-muted);
+    font-size: 1.1rem;
+}
+
+.caption {
+    color: var(--tcp-muted);
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+/* Navigation */
+.navbar {
+    background: rgba(255, 255, 255, 0.96) !important;
+    box-shadow: 0 1px 0 var(--tcp-border);
+    backdrop-filter: saturate(180%) blur(8px);
+}
+
+.navbar .nav-link {
+    border-radius: 6px;
+}
+
+.navbar .nav-link:hover,
+.navbar .dropdown-item:hover {
+    color: var(--tcp-accent) !important;
+    opacity: 1;
+}
+
+.navbar .dropdown-menu {
+    border: 1px solid var(--tcp-border);
+    border-radius: 10px;
+    box-shadow: var(--tcp-shadow-hover);
+    padding: 0.4rem;
+}
+
+.navbar .dropdown-item {
+    border-radius: 6px;
+}
+
+.navbar .dropdown-item.active,
+.navbar .dropdown-item:active {
+    background: var(--tcp-accent-soft);
+    color: var(--tcp-accent);
+}
+
+progress::-webkit-progress-value {
+    background: var(--tcp-accent);
+}
+
+progress::-moz-progress-bar {
+    background: var(--tcp-accent);
+}
+
+/* Footer: a normal block at the end of the page instead of a bar that
+   slides over the content. */
+.content-wrapper {
+    padding-bottom: 2rem;
+}
+
+footer,
+footer.visible {
+    position: static;
+    transform: none;
+    margin-top: 2rem;
+    background: transparent;
+    border-top: 1px solid var(--tcp-border);
+    color: var(--tcp-muted);
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+/* Team members as cards */
+.team-member {
+    background: var(--tcp-card);
+    border: 1px solid var(--tcp-border);
+    border-radius: var(--tcp-radius);
+    box-shadow: var(--tcp-shadow);
+    padding: 1.5rem 1rem !important;
+    margin: 0 0 1.25rem 0 !important;
+    align-items: flex-start;
+}
+
+article > hr,
+.post article hr {
+    display: none;
+}
+
+.team-member figure {
+    width: 168px;
+    height: 168px;
+    margin: 0 auto;
+    box-shadow: 0 0 0 4px var(--tcp-accent-soft);
+}
+
+.team-member .member-img {
+    width: 168px;
+    height: 168px;
+    box-shadow: none !important;
+}
+
+.member-info h4 {
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-bottom: 0.15rem;
+}
+
+.member-info h4 + p {
+    color: var(--tcp-accent);
+    font-weight: 500;
+}
+
+.member-info .bio {
+    text-align: left;
+    color: #3a434c;
+    font-size: 0.97rem;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin: 0.4rem 0 0.8rem;
+}
+
+.contact-info .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.25rem 0.7rem;
+    border: 1px solid var(--tcp-border);
+    border-radius: 999px;
+    background: #fbfcfd;
+    color: var(--tcp-text);
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+}
+
+.contact-info .chip:hover {
+    border-color: var(--tcp-accent);
+    background: var(--tcp-accent-soft);
+    color: var(--tcp-accent);
+    text-decoration: none;
+}
+
+.contact-info .chip i {
+    color: var(--tcp-accent);
+}
+
+/* Former members, theses and software lists */
+.member-item,
+.thesis-item,
+.software-item {
+    background: var(--tcp-card);
+    border: 1px solid var(--tcp-border);
+    border-left: 4px solid var(--tcp-accent);
+    border-radius: var(--tcp-radius);
+    box-shadow: var(--tcp-shadow);
+    padding: 1.1rem 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.member-item:hover,
+.thesis-item:hover,
+.software-item:hover {
+    box-shadow: var(--tcp-shadow-hover);
+    transform: none;
+}
+
+.member-name,
+.thesis-title,
+.software-title {
+    font-weight: 600;
+    font-size: 1.15rem;
+    line-height: 1.35;
+}
+
+.member-meta,
+.thesis-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1.25rem;
+    color: var(--tcp-muted);
+}
+
+.member-meta .ml-3,
+.thesis-meta .ml-3 {
+    margin-left: 0 !important;
+}
+
+.member-meta i,
+.thesis-meta i,
+.member-topic i,
+.member-current i {
+    color: var(--tcp-accent);
+    width: 1.1em;
+}
+
+.member-topic {
+    color: #3a434c;
+}
+
+.member-current {
+    color: var(--tcp-accent);
+}
+
+.thesis-item a {
+    display: inline-flex !important;
+    font-weight: 500;
+}
+
+.thesis-item a img {
+    height: 28px !important;
+}
+
+.intro-text p {
+    color: var(--tcp-muted) !important;
+}
+
+/* Tablets */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        text-align: left !important;
+    }
+}
+
+/* Phones */
+@media (max-width: 767.98px) {
+    body {
+        padding-top: 64px;
+    }
+
+    .container.mt-5 {
+        margin-top: 1.5rem !important;
+    }
+
+    .post-title {
+        font-size: 1.75rem;
+    }
+
+    .desc {
+        font-size: 1rem;
+    }
+
+    .navbar-collapse {
+        max-height: calc(100vh - 64px);
+        overflow-y: auto;
+        border-top: 1px solid var(--tcp-border);
+    }
+
+    .navbar .nav-link,
+    .navbar .dropdown-item {
+        padding: 0.7rem 0.75rem !important;
+    }
+
+    .navbar .dropdown-menu {
+        box-shadow: none;
+        border: none;
+        background: var(--tcp-bg);
+    }
+
+    .team-member {
+        text-align: center;
+        padding: 1.25rem 0.75rem !important;
+    }
+
+    .team-member > [class*="col-"] {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .team-member figure,
+    .team-member .member-img {
+        width: 128px;
+        height: 128px;
+    }
+
+    .team-member figure {
+        margin-bottom: 0.9rem;
+    }
+
+    .team-member .contact-info {
+        justify-content: center;
+    }
+
+    .member-info .bio {
+        text-align: left;
+    }
+
+    .member-item,
+    .thesis-item,
+    .software-item {
+        padding: 1rem;
+    }
+}

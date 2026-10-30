@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap & MDB -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="tcp.png">
+    <link rel="apple-touch-icon" href="tcp.png">
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Barlow:300,400,500,700|Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+    <!-- Common styles -->
+    <link rel="stylesheet" href="pages/assets/css/main.css">
+
+    <!-- Page specific styles -->
+    <style>
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .navbar-collapse {
+                background: white;
+                padding: 1rem;
+                box-shadow: 0 2px 4px rgba(0,0,0,.1);
+            }
+        }
+    
+        .desc {
+            font-size: 1.2rem;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .caption {
+            font-size: 0.9rem;
+            color: #666;
+            text-align: center;
+        }
+
+        /* Added spacing for caption */
+        .caption br {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Progress bar styling specific to index page */
+        #progress {
+            position: fixed;
+            top: 56px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+        }
+    </style>
+    <link rel="stylesheet" href="pages/assets/css/theme.css">
+</head>
+
+<body class="fixed-top-nav">
+    <!-- Header -->
+    <header>
+    
+        <!-- Nav Bar -->
+<nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+    <div class="container">
+        <a class="navbar-brand title font-weight-lighter" href="index.html">
+            <img src="tcp.png" alt="TCP Logo">
+            <!--span class="font-weight-bold">Theoretical Chemical Physics</span--> 
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse text-right" id="navbarNav">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="teamDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Team
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="teamDropdown">
+                        <a class="dropdown-item" href="pages/team.html">Team</a>
+                        <a class="dropdown-item" href="pages/former.html">Former Members</a>
+                        <a class="dropdown-item" href="pages/photos.html">Gallery</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="publicationsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Research
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="publicationsDropdown">
+                        <a class="dropdown-item" href="pages/publications.html">Publications</a>
+                        <a class="dropdown-item" href="pages/theses.html">Theses</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/software.html">Software</a>
+                </li>
+                <!--li class="nav-item">
+                    <a class="nav-link" href="pages/teaching.html">Teaching</a>
+                </li-->
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/join.html">Join</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+        <!-- Scrolling Progress Bar -->
+        <progress id="progress" value="0"></progress>
+    </header>
+
+    <!-- Content -->
+    <div class="container mt-5">
+        <div class="post">
+            <header class="post-header">
+                <h1 class="post-title text-center">
+                    <span class="font-weight-bold">Theoretical Chemical Physics</span>
+                </h1>
+                <p class="desc">The motto of our group is <b>"From Cosmology to Biology"</b>. We engage in quirky science by bridging disparate concepts from various fields of research, while breaking boundaries between "established" scientific methodologies. Some examples of our unusual research include addressing the dark-energy problem of cosmology by quantum-chemical approaches <a href="https://doi.org/10.1103/PhysRevLett.130.041601">[PRL 130, 041601 (2023)]</a>; predicting the crystal forms of drugs in silico with experimental accuracy <a href="https://www.nature.com/articles/s41586-023-06587-3">[Nature 623, 324 (2023)]</a>; creating general models for protein dynamics beyond AlphaFold and classical force fields <a href="https://www.science.org/doi/10.1126/sciadv.adn4397">[Sci. Adv. 10, eadn4397 (2024)</a>, <a href="https://doi.org/10.1021/jacs.5c09558">JACS 147, 33723 (2025)]</a>; or finding gravitational analogues in quantum systems through molecular interactions <a href="https://pubs.acs.org/doi/10.1021/jacs.4c11211">[JACS 146, 31198 (2024)]</a>.</br> </br>
+                <a href="mailto:alexandre.tkatchenko@uni.lu">Apply to our group</b></a> if you have unbounded curiosity, wide-ranging scientific interests, and a knack for breaking established concepts. Our group includes and collaborates with physicists, chemists, biologists, mathematicians, and computer scientists; both in theory and experiment.<p class="font-weight-bold h5 text-center"></p>
+            </header>
+
+            <article>
+                <div class="clearfix">
+                    <p><img style="width:100%;" src="pages/assets/img/g25.JPG" alt="Lab Banner"></p>
+
+                    <h3 id="mission"><span class="font-weight-bold"></span></h3>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container mt-0">
+            © Copyright 2026 Theoretical Chemical Physics
+        </div>
+    </footer>
+
+    <script>
+        function handleScroll() {
+            const footer = document.getElementById('footer');
+            const windowHeight = window.innerHeight;
+            const documentHeight = document.documentElement.scrollHeight;
+            const scrollTop = window.scrollY || document.documentElement.scrollTop;
+            
+            // Calculate how close to the bottom we are
+            const scrolledToBottom = (windowHeight + scrollTop) >= (documentHeight - 50);
+            
+            // Show/hide footer based on scroll position
+            if (scrolledToBottom) {
+                footer.classList.add('visible');
+            } else {
+                footer.classList.remove('visible');
+            }
+        }
+
+        // Add scroll event listener
+        window.addEventListener('scroll', handleScroll);
+        
+        // Initial check on page load
+        handleScroll();
+    </script>
+
+    <!-- JavaScripts -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js"></script>
+
+    <!-- Progress Bar Script -->
+    <script>
+        const progressBar = $("#progress");
+        
+        window.onload = function() {
+            setTimeout(progressBarSetup, 50);
+        };
+
+        function progressBarSetup() {
+            initializeProgressElement();
+            $(document).on("scroll", function() {
+                progressBar.attr({ value: getCurrentScrollPosition() });
+            });
+            $(window).on("resize", initializeProgressElement);
+        }
+
+        function getCurrentScrollPosition() {
+            return $(window).scrollTop();
+        }
+
+        function initializeProgressElement() {
+            let navbarHeight = $("#navbar").outerHeight(true);
+            progressBar.attr({
+                max: getDistanceToScroll(),
+                value: getCurrentScrollPosition(),
+            });
+        }
+
+        function getDistanceToScroll() {
+            return $(document).height() - $(window).height();
+        }
+    </script>
+</body>
+</html>

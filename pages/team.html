@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Team | Theoretical Chemical Physics</title>
+
+    <!-- Bootstrap & MDB -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/img/tcp.png">
+    <link rel="apple-touch-icon" href="assets/img/tcp.png">
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Barlow:300,400,500,700|Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+    <!-- Common styles -->
+    <link rel="stylesheet" href="../pages/assets/css/main.css">
+
+    <style>
+        .team-member {
+            padding-top: 60px;
+            margin-top: -60px;
+            padding-left: 5px;
+            margin-bottom: 1rem;
+        }
+
+        .team-member figure {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            overflow: hidden;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .member-img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50% !important;
+        }
+
+        .member-info h4 {
+            margin-bottom: 0.5rem;
+        }
+
+        .member-info p {
+            margin-bottom: 0.5rem;
+        }
+
+        .member-info .contact-info {
+            margin-bottom: 0.6rem;
+        }
+
+        .member-info .bio {
+            text-align: justify;
+        }
+
+        @media (max-width: 768px) {
+            .team-member figure {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .member-img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="assets/css/theme.css">
+</head>
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="../index.html">
+            <img src="../tcp.png" alt="TCP Logo">
+            <span class="font-weight-bold">Theoretical Chemical Physics</span>
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="teamDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Team
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="teamDropdown">
+                        <a class="dropdown-item active" href="team.html">Team</a>
+                        <a class="dropdown-item" href="former.html">Former Members</a>
+                        <a class="dropdown-item" href="photos.html">Gallery</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="publicationsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Research
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="publicationsDropdown">
+                        <a class="dropdown-item" href="publications.html">Publications</a>
+                        <a class="dropdown-item" href="theses.html">theses</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="software.html">Software</a>
+                </li>
+                <!--li class="nav-item">
+                    <a class="nav-link" href="teaching.html">Teaching</a>
+                </li-->
+                <li class="nav-item">
+                    <a class="nav-link" href="join.html">Join</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+        <!-- Scrolling Progress Bar -->
+        <progress id="progress" value="0"></progress>
+    </header>
+
+    <div class="content-wrapper">
+        <!-- Content -->
+        <div class="container mt-5">
+            <div class="post">
+
+                <article>
+                    <!-- Prof. Alexandre Tkatchenko -->
+                    <div class="row team-member">
+                        <div class="col-sm-3">
+                            <figure>
+                                <img src="assets/img/at.png" class="img-fluid z-depth-1 rounded-circle member-img" alt="Prof. Alexandre Tkatchenko">
+                            </figure>
+                        </div>
+                        <div class="col-sm-8 member-info">
+                            <h4>Prof. Alexandre Tkatchenko</h4>
+                            <p>Head of the Research Group</p>
+                            <div class="contact-info">
+                                <a class="chip" href="https://scholar.google.com/citations?user=o2t1Pv8AAAAJ&hl=en&oi=ao" target="_blank"><i class="ai ai-google-scholar"></i> Google Scholar</a>
+                                <a class="chip" href="mailto:alexandre.tkatchenko@uni.lu"><i class="fas fa-envelope"></i> Email</a>
+                            </div>
+                            <p class="bio">Alexandre Tkatchenko is a Professor of Physics and Chair of Theoretical Chemical Physics at Uni.lu. Tkatchenko also holds a distinguished visiting professor position at the Technical University of Berlin and has co-founded two deeptech startups. He has delivered more than 450 invited talks, seminars and colloquia worldwide and served on the editorial boards of four society journals: Science Advances (AAAS), Physical Review Letters (APS), Chemical Science (RSC), and the Journal of Physical Chemistry Letters (ACS). Tkatchenko has received a number of awards, including APS Fellow from the American Physical Society, Fellow of the Royal Society of Chemistry (FRSC), Gerhard Ertl Young Investigator Award of the German Physical Society, Dirac Medal from the World Association of Theoretical and Computational Chemists (WATOC), Feynman prize from the Foresight Institute, van der Waals prize of the international conference on non-covalent interactions (ICNI), and five flagship grants from the European Research Council: a Starting Grant in 2011, a Consolidator Grant in 2017, an Advanced Grant in 2022, and Proof-of-Concept Grants in 2020 and 2023. During free time, he tinkers with both gravity and quantum mechanics.</p>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!-- Igor Poltavskyi -->
+                <div class="row team-member">
+                    <div class="col-sm-3">
+                        <figure>
+                            <img src="assets/img/ip.jpg" class="img-fluid z-depth-1 rounded-circle member-img" alt="Igor Poltavskyi">
+                        </figure>
+                    </div>
+                    <div class="col-sm-8 member-info">
+                        <h4>Igor Poltavskyi</h4>
+                        <p>Research Scientist; Team Leader on Machine Learning</p>
+                        <div class="contact-info">
+                            <a class="chip" href="https://scholar.google.com/citations?user=tX82CDwAAAAJ&hl=en&oi=ao" target="_blank"><i class="ai ai-google-scholar"></i> Google Scholar</a>
+                            <a class="chip" href="mailto:igor.poltavskyi@uni.lu"><i class="fas fa-envelope"></i> Email</a>
+                        </div>
+                        <p class="bio">Research Interests: Statistical physics, imaginary-time path integral methods, nuclear quantum effects, ab initio simulations</p>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- Josh Berryman -->
+                <div class="row team-member">
+                    <div class="col-sm-3">
+                        <figure>
+                            <img src="assets/img/jb.jpg" class="img-fluid z-depth-1 rounded-circle member-img" alt="Josh Berryman">
+                        </figure>
+                    </div>
+                    <div class="col-sm-8 member-info">
+                        <h4>Josh Berryman</h4>
+                        <p>Research Scientist; Team Leader on Biomolecular Modeling</p>
+                        <div class="contact-info">
+                            <a class="chip" href="https://scholar.google.com/citations?user=quu2fm8AAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar"></i> Google Scholar</a>
+                            <a class="chip" href="mailto:josh.berryman@uni.lu"><i class="fas fa-envelope"></i> Email</a>
+                        </div>
+                        <p class="bio">Josh Berryman has lifelong commitments to machine learning and to interdisciplinary physics, his highlight achievements include pioneering the use of neural networks for Go in 2000, developing multimedia-capable wireless devices at Imagination Technologies, doing a PhD at Leeds University in biomolecular modelling in 2010, and proposing and verifying a mechanism for COVID neurotoxicity in 2022.  He is a member of the college of fellows of Luxembourg's Institute for Advanced Studies, and has won and managed multiple Luxembourgish research grants including CORE and CORE Junior, as well as EU-JPND funding for investigating the overlap between COVID and neurodegenerative disease <a href="https://www.covaminf.org" target="_blank">[covaminf.org]</a>.</p>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- Matteo Barborini -->
+                <div class="row team-member">
+                    <div class="col-sm-3">
+                        <figure>
+                            <img src="assets/img/mb.jpg" class="img-fluid z-depth-1 rounded-circle member-img" alt="Matteo Barborini">
+                        </figure>
+                    </div>
+                    <div class="col-sm-8 member-info">
+                        <h4>Matteo Barborini</h4>
+                        <p>Research Scientist; Team Leader on HPC and Computational Quantum Mechanics</p>
+                        <div class="contact-info">
+                            <a class="chip" href="https://scholar.google.com/citations?user=IL06_pgAAAAJ&hl=en&oi=ao" target="_blank"><i class="ai ai-google-scholar"></i> Google Scholar</a>
+                            <a class="chip" href="mailto:matteo.barborini@uni.lu"><i class="fas fa-envelope"></i> Email</a>
+                        </div>
+                        <p class="bio">Researcher in Computational Chemical Physics working at the <a href="https://www.uni.lu/research-en/core-facilities/hpc/"> HPC Platform of the University of Luxembourg</a> with many years of experience in the development and implementation of quantum Monte Carlo methods, and in the application of several Computational Methods in Quantum Chemistry and Solid State Physics.
+During his career he contributed to the development of <a href="https://scholar.google.it/citations?user=wTSOfWEAAAAJ&hl=it"> Prof. Sandro Sorella</a>'s code <a href="https://sissaschool.github.io/turborvb_website/"> TurboRVB</a> and since 2017 he has been the initiator and main developer of the <a href="https://github.com/QMeCha"> Quantum MeCha (QMeCha)</a> quantum Monte Carlo package.
+His main interest is in the development of explicitly correlated wave functions for the solution of the many-body time independent Schrodinger equation for molecular systems.
+Recently, he has contributed to the supervision of PhD students in projects related to Molecules-Positron meta-stable states and Molecules-QDOs embedding procedures.</p>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- Matteo Gori -->
+                <div class="row team-member">
+                    <div class="col-sm-3">
+                        <figure>
+                            <img src="assets/img/mg.jpg" class="img-fluid z-depth-1 rounded-circle member-img" alt="Matteo Gori">
+                        </figure>
+                    </div>
+                    <div class="col-sm-8 member-info">
+                        <h4>Matteo Gori</h4>
+                        <p>Research Scientist; Team Leader for Statistical Mechanics</p>
+                        <div class="contact-info">
+                            <a class="chip" href="https://scholar.google.lu/citations?user=WcXxgR8AAAAJ&hl=it" target="_blank"><i class="ai ai-google-scholar"></i> Google Scholar</a>
+                            <a class="chip" href="mailto:matteo.gori@uni.lu"><i class="fas fa-envelope"></i> Email</a>
+                        </div>
+                        <p class="bio">Matteo Gori is a theoretical physicist exploring the interplay between statistical mechanics, quantum-classical mixed dynamics, and many-body van der Waals interactions in complex systems. His research focuses on uncovering how electrodynamic interactions—both classical and quantum—govern the dynamical organization of biomolecular systems. By combining differential geometry, quantum field theory, and advanced statistical methods with numerical simulations, he investigates emergent collective phenomena, bridging fundamental physics with real-world biological complexity.</p>
+                    </div>
+                </div>
+                <hr>
+
+<!-- Matthieu Sarkis -->
+                <div class="row team-member">
+                    <div class="col-sm-3">
+                        <figure>
+                            <img src="assets/img/ms.jpg" class="img-fluid z-depth-1 rounded-circle member-img" alt="Matthieu Sarkis">
+                        </figure>
+                    </div>
+                    <div class="col-sm-8 member-info">
+                        <h4>Matthieu Sarkis</h4>
+                        <p>Research Scientist; Team Leader for Theoretical Quantum Mechanics</p> 
+                        <div class="contact-info">
+                            <a class="chip" href="https://scholar.google.co.jp/citations?user=BMJI1cgAAAAJ&hl=fi" target="_blank"><i class="ai ai-google-scholar"></i> Google Scholar</a>
+                            <a class="chip" href="https://github.com/MatthieuSarkis" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            <a class="chip" href="mailto:matthieu.sarkis@uni.lu"><i class="fas fa-envelope"></i> Email</a>
+                        </div>
+                        <p class="bio">His research focuses on multipartite entanglement in quantum information theory and the application of quantum machine learning to quantum chemistry, with a particular emphasis on long-range interactions. His work explores fundamental questions at the intersection of quantum many-body physics and quantum information. He is also interested in QFT and in particular Conformal Field Theories in 2 dimensions.</p>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- Tobias Schäfer -->
+                <div class="row team-member">
+                    <div class="col-sm-3">
+                        <figure>
+                            <img src="assets/img/ts.jpg" class="img-fluid z-depth-1 rounded-circle member-img" alt="Tobias Schäfer">
+                        </figure>
+                    </div>
+                    <div class="col-sm-8 member-info">
+                        <h4>Tobias Schäfer</h4>
+                        <p>Research Scientist; Team Leader on Computational Quantum Chemistry for Materials Science</p>
+                        <div class="contact-info">
+                            <a class="chip" href="https://scholar.google.com/citations?user=MhmPJNUAAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar"></i> Google Scholar</a>
+                            <a class="chip" href="https://github.com/toschaefer" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            <a class="chip" href="https://toschaefer.github.io/" target="_blank"><i class="fas fa-globe"></i> Website</a>
+                            <a class="chip" href="mailto:tobias.schaefer@uni.lu"><i class="fas fa-envelope"></i> Email</a>
+                        </div>
+                        <p class="bio">Tobias Schäfer is a theoretical physicist working on many-electron correlation in solids and molecules, with a focus on periodic coupled cluster theory, wavefunction embedding, and reduced-cost strategies that make correlated methods applicable to realistic systems. He received his PhD from the University of Vienna under Georg Kresse and then worked at TU Wien in the group of Andreas Grüneis, as assistant professor and as PI of an <a href="https://www.fwf.ac.at/en/research-radar/10.55776/ESP335" target="_blank">FWF ESPRIT grant</a>. He contributes to the plane-wave codes VASP and DFTK and to Cc4s, a massively parallel coupled cluster solver. He applies these methods to surface adsorption and heterogeneous catalysis, metals and oxides, solid electrolytes, and noncovalent interactions in large molecules. In the TCP group, he connects coupled cluster theory with machine learning: he provides coupled cluster reference data to train and validate machine-learning force fields, and uses these data to assess density-functional approximations, including many-body dispersion, across a broad range of materials.</p>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- Dahvyd Wing -->
+                <div class="row team-member">
+                    <div class="col-sm-3">
+                        <figure>
+                            <img src="assets/img/dw.jpg" class="img-fluid z-depth-1 rounded-circle member-img" alt="Dahvyd Wing">
+                        </figure>
+                    </div>
+                    <div class="col-sm-8 member-info">
+                        <h4>Dahvyd Wing</h4>
+                        <p>Post-Doc</p>
+                        <div class="contact-info">
+                            <a class="chip" href="https://scholar.google.com/citations?user=gS5FDMcAAAAJ&hl=en&oi=sra" target="_blank"><i class="ai ai-google-scholar"></i> Google Scholar</a>
+                            <a class="chip" href="mailto:dahvyd.wing@uni.lu"><i class="fas fa-envelope"></i> Email</a>
+                        </div>
+                        <p class="bio">Current interests: Development of interatomic potentials for large systems using neural networks combined with simple models of long-range physics, such as the many-body dispersion (MBD) method</p>
+                    </div>
+                </div>
+                <hr>
+
+                 <!-- Reza Karimpour -->
+                <div class="row team-member">
+                    <div class="col-sm-3">
+                        <figure>
+                            <img src="assets/img/mr.jpg" class="img-fluid z-depth-1 rounded-circle member-img" alt="Reza Karimpour">
+                        </figure>
+                    </div>
+                    <div class="col-sm-8 member-info">
+                        <h4>Reza Karimpour</h4>
+                        <p>Post-Doc</p>
+                        <div class="contact-info">
+                            <a class="chip" href="https://scholar.google.com/citations?user=5_kGbrQAAAAJ&hl=en&oi=sra" target="_blank"><i class="ai ai-google-scholar"></i> Google Scholar</a>
+                            <a class="chip" href="mailto:reza.karimpour@uni.lu"><i class="fas fa-envelope"></i> Email</a>
+                        </div>
+                        <p class="bio">Have you ever wondered how invisible quantum forces shape the world around us? I do, every day! I'm a theoretical physicist exploring the forces and interactions that emerge from quantum mechanical fluctuations of electromagnetic and matter fields. My research, grounded in quantum electrodynamics and quantum field theory, covers a range of fascinating topics, from the Casimir effect in curved spaces and/or between macroscopic objects to Casimir-Polder and van der Waals forces in atomic, molecular, and low-dimensional material systems. I also investigate how external bodies and fields influence intermolecular interactions. While my work is rooted in theory, I like thinking about how these quantum effects could be observed in real-world experiments. What would it take to measure them? How could we design experiments to test these predictions? These questions drive my curiosity and motivate my research.</p>
+                    </div>
+                </div>
+                <hr>
+
+<!-- Naziha Tarannam -->
+                <div class="row team-member">
+                    <div class="col-sm-3">
+                        <figure>
+                            <img src="assets/img/nt.jpeg" class="img-fluid z-depth-1 rounded-circle member-img" alt="Naziha Tarannam">
+                        </figure>
+                    </div>
+                    <div class="col-sm-8 member-info">
+                        <h4>Naziha Tarannam</h4>
+                        <p>Post-Doc</p>
+                        <div class="contact-info">
+                            <a class="chip" href="https://scholar.google.com/citations?user=7rT-M3cAAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar"></i> Google Scholar</a>
+                            <a class="chip" href="mailto:naziha.tarannam@uni.lu"><i class="fas fa-envelope"></i> Email</a>
+                        </div>
+                        <p class="bio">I have obtained my PhD at the Ben-Gurion University of the Negev, Israel in 2022 under the
+supervision of Prof. Sebastian Kozuch. During my PhD, I focused on developing a quantum chemical
+model for assessing the kinetics of catalytic cycles and applying it to various organometallic and non-
+covalent organocatalytic processes. After submitting my PhD thesis, I worked with Prof. Dan T. Major
+at Bar-Ilan University, Israel, on a short-term postdoctoral position, where I investigated the
+hydrolysis of toxic nerve agents occurring at the active site of the enzyme Phosphotriesterase. In
+October, 2024, I joined the TCP group at the University of Luxembourg as a Postdoctoral researcher.
+My current research interests include developing and refining Machine Learning Force Fields (MLFFs)
+for accurate depiction of diverse biomolecular dynamics, in comparison to classical force fields.
+Additionally, I am interested in understanding the role of long-range van der Waals interactions in
+large biomolecules.</p>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- Upala Mukhopadhyay -->
+                <div class="row team-member">
+                    <div class="col-sm-3">
+                        <figure>
+                            <img src="assets/img/um.jpg" class="img-fluid z-depth-1 rounded-circle member-img" alt="Upala Mukhopadhyay">
+                        </figure>
+                    </div>
+                    <div class="col-sm-8 member-info">
+                        <h4>Upala Mukhopadhyay</h4>
+                        <p>Post-Doc</p>
+                        <div class="contact-info">
+                            <a class="chip" href="https://inspirehep.net/authors/1044823" target="_blank"><i class="ai ai-inspire"></i> INSPIRE-HEP</a>
+                            <a class="chip" href="mailto:upala.mukhopadhyay@uni.lu"><i class="fas fa-envelope"></i> Email</a>
+                        </div>
+                        <p class="bio">Upala Mukhopadhyay is a cosmologist exploring various inter-connected topics in cosmology, e.g., Dark Energy, Dark Matter, modified gravity, 21cm Hydrogen line in reionization epoch, Primordial Black Holes, Gravitational Waves etc. Her research mainly focuses on the theoretical and phenomenological study of the late time acceleration of the Universe, Dark Energy and cosmic tensions (namely, the Hubble tension, the S8 tension, the tension of high redshift massive galaxies reported by James Webb Space Telescope). Along with analytical calculations, she also analyses large cosmological data sets related to type-Ia supernovae, baryon acoustic oscillations, cosmic microwave background, growth of cosmic structures etc. Since cosmology have arrived in a data driven era, she is interested to explore machine learning techniques in cosmology to better understand the unknown components of our Universe by unifying experimental results and theoretical aspects.</p>
+                    </div>
+                </div>
+                <hr>
+
+
+                <!-- Almaz Khabibrakhmanov -->
+                <div class="row team-member">
+                    <div class="col-sm-3">
+                        <figure>
+                            <img src="assets/img/akh.jpg" class="img-fluid z-depth-1 rounded-circle member-img" alt="Almaz Khabibrakhmanov">
+                        </figure>
+                    </div>
+                    <div class="col-sm-8 member-info">
+                        <h4>Almaz Khabibrakhmanov</h4>
+                        <p>Post-Doc</p>
+                        <div class="contact-info">
+                            <a class="chip" href="https://scholar.google.com/citations?user=ApFXAn0AAAAJ&hl=en&oi=ao" target="_blank"><i class="ai ai-google-scholar"></i> Google Scholar</a>
+                            <a class="chip" href="mailto:almaz.khabibrakhmanov@uni.lu"><i class="fas fa-envelope"></i> Email</a>
+                        </div>
+                        <p class="bio">I graduated from the Moscow Institute of Physics and Technology (MIPT) in 2020, where I developed a strong background in chemical physics and computational materials science. In 2021, I joined the research group of Prof. Alexandre Tkatchenko at the University of Luxembourg, where I have recently completed my PhD. My doctoral research focused on designing simple yet accurate models for van der Waals (vdW) dispersion interactions using quantum Drude oscillators (QDOs). One of the key outcomes was the development of universal interatomic vdW-QDO potentials – efficient tools that have already found practical applications in machine-learning force fields (MLFFs), helping to model long-range interactions typically missing from neural network potentials. On a more fundamental level, my work revealed how vdW dispersion can polarize electron density – an effect often overlooked but critical for large, polarizable systems. These insights open exciting opportunities for developing next-generation "dispersion-consistent" density functionals. Currently, I am continuing this line of research as a short-term PostDoc in the group, with a focus on bridging the gap between accurate quantum mechanical models and practical applications in (bio)molecular simulations.</p>
+                    </div>
+                </div>
+                <hr>
+                <!-- Evgeny MOERMAN -->
+                <div class="row team-member">
+                    <div class="col-sm-3">
+                        <figure>
+                            <img src="assets/img/em.jpg" class="img-fluid z-depth-1 rounded-circle member-img" alt="Evgeny Moerman">
+                        </figure>
+                    </div>
+                    <div class="col-sm-8 member-info">
+                        <h4>Evgeny Moerman</h4>
+                        <p>Post-Doc</p>
+                        <div class="contact-info">
+                            <a class="chip" href="https://scholar.google.com/citations?user=QQncLnAAAAAJ&hl=de&oi=ao" target="_blank"><i class="ai ai-google-scholar"></i> Google Scholar</a>
+                            <a class="chip" href="mailto:evgeny.moerman@uni.lu"><i class="fas fa-envelope"></i> Email</a>
+                        </div>
+                        <p class="bio">Evgeny Moerman is a computational chemist, with a background in development and application of ab initio electronic structure methods including density functional theory and wave function methods for molecules and periodic solids. Interested in applying his expertise to real-world problems particularly in collaboration with industrial partners and experimental collaborators, he joined Alexandre Tkatchenko's group in May 2025 after the completion of his PhD at the Fritz-Haber-Institut Berlin. His research focusses amongst others on the investigation of (bio)chemical reactivity using state-of-the-art machine learning force fields (MLFFs), investigation of dispersion-corrected density functional theory for practical applications in materials science, and the extension of universal MLFFs to reliably model inorganic-organic hybrid materials. </p>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- Miguel GALLEGOS GONZALEZ -->
+                <div class="row team-member">
+                    <div class="col-sm-3">
+                        <figure>
+                            <img src="assets/img/mgg.jpeg" class="img-fluid z-depth-1 rounded-circle member-img" alt="Miguel Gallegos Gonzalez">
+                        </figure>
+                    </div>
+                    <div class="col-sm-8 member-info">
+                        <h4>Miguel Gallegos Gonzalez</h4>
+                        <p>Post-Doc</p>
+                        <div class="contact-info">
+                            <a class="chip" href="https://scholar.google.com/citations?user=JWlg87IAAAAJ&hl=es" target="_blank"><i class="ai ai-google-scholar"></i> Google Scholar</a>
+                            <a class="chip" href="mailto:miguel.gallegosgonzalez@uni.lu"><i class="fas fa-envelope"></i> Email</a>
+                        </div>
+                        <p class="bio"> Miguel Gallegos is a researcher in Theoretical and Computational Chemistry. He earned his Bachelor’s degree in Chemistry (2018), a Master’s in Chemistry and Sustainable Development (2019), and a Master’s in Theoretical Chemistry and Computational Modeling (2021) from the University of Oviedo, where he also completed his Ph.D. in 2024 under the supervision of Prof. Ángel Martín Pendás. His doctoral work focused on real-space chemical analyses, advancing the framework of Quantum Chemical Topology (QCT) through the theory of Atoms in Molecules (QTAIM) and energy partitioning techniques such as Interacting Quantum Atoms (IQA), while exploring their synergy with Artificial Intelligence to predict complex chemical properties. He is currently a Marie Skłodowska-Curie Actions (MSCA) fellow working on the Local Chemical AI project, which develops transferable and interpretable machine learning models based on real-space partitioning. By leveraging QTAIM and IQA, his research aims to construct physically grounded local ML kernels with applications in drug design, transferable ML Force Fields, and the prediction of quantum chemical properties in complex systems.</p>
+                    </div>
+                </div>
+                <hr>
+
+
+                <!-- Xiaoyun Lin -->
+                <div class="row team-member">
+                    <div class="col-sm-3">
+                        <figure>
+                            <img src="assets/img/xl.jpg" class="img-fluid z-depth-1 rounded-circle member-img" alt="Xiaoyun Lin">
+                        </figure>
+                    </div>
+                    <div class="col-sm-8 member-info">
+                        <h4>Xiaoyun Lin</h4>
+                        <p>Post-Doc</p>
+                        <div class="contact-info">
+                            <a class="chip" href="https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&user=GaBboOYAAAAJ&gmla=AH8HC4zUx8iqCeUwqNLkmEYM-Ro7oHZ1kGkH3t-HPHtgEYchrhOr9s7fo-io_D1k_Wa_HTSSKQHvtthS_x3euaq8RxalHQZvYpj3-8CLUIm4" target="_blank"><i class="ai ai-google-scholar"></i> Google Scholar</a>
+                            <a class="chip" href="mailto:xiaoyun.lin@uni.lu"><i class="fas fa-envelope"></i> Email</a>
+                        </div>
+                        <p class="bio">
+Driven by green and sustainable energy imperatives, Her research interests focus on physics-informed, machine learning (ML)-accelerated electrochemical materials design. Her academic background spans theoretical chemistry, machine learning, electrochemical materials, density functional theory, and chemical engineering. During her PhD at Tianjin University, she developed interpretable machine-learning methods to rapidly screen vast candidate pools for optimal electrocatalysts, deliberately avoiding black-box approaches in order to extract underlying physical insights. More recently, her work has expanded beyond thermodynamic property screening to encompass kinetic process engineering, for example MLFF-accelerated studies of Li-ion diffusion in solid-state electrolytes. At the same time, she is advancing generative models to overcome the limits of conventional forward design and more effectively explore global chemical space.</p>
+                    </div>
+                </div>
+                <hr>
+
+
+
+                <!-- Anton Charkin-Gorbulin -->
+                <div class="row team-member">
+                    <div class="col-sm-3">
+                        <figure>
+                            <img src="assets/img/ac.png" class="img-fluid z-depth-1 rounded-circle member-img" alt="Anton Charkin-Gorbulin">
+                        </figure>
+                    </div>
+                    <div class="col-sm-8 member-info">
+                        <h4>Anton Charkin-Gorbulin</h4>
+                        <p>Post-Doc</p>
+                        <div class="contact-info">
+                            <a class="chip" href="mailto:anton.charkin-gorbulin@uni.lu"><i class="fas fa-envelope"></i> Email</a>
+                        </div>
+                        <p class="bio">Current Interests: Development of machine learning force fields to study layered halide perovskites in collaboration with the University of Mons.</p>
+                    </div>
+                </div>
+                <hr>
+
+
+                <!-- Florian Brünig -->
+                <div class="row team-member">
+                    <div class="col-sm-3">
+                        <figure>
+                            <img src="assets/img/fb.jpg" class="img-fluid z-depth-1 rounded-circle member-img" alt="Florian Brünig">
+                        </figure>
+                    </div>
+                    <div class="col-sm-8 member-info">
+                        <h4>Florian Brünig</h4>
+                        <p>Post-Doc</p>
+                        <div class="contact-info">
+                            <a class="chip" href="https://orcid.org/0000-0001-8583-6488" target="_blank"><i class="ai ai-orcid"></i> ORCID</a>
+                        </div>
+                        <p class="bio">Florian Brünig is a theoretical physicist trained at Freie Universität Berlin with a strong focus on molecular biophysics. During his PhD he worked on simulations and stochastic modelling of proton dynamics and vibrational spectroscopy in water and biological environments as an integral part of the Collaborative Research Center 1078 “Protonation Dynamics in Protein Systems”. His investigation of large protein complexes in experiments during the BSc, and the analysis of electron tomography data of single cells at Zuse Institute add to his broad background on biophysical research. His several publications showcase his expertise across various fundamental methods in statistical physics, i.e. linear response, projection and rare-event sampling, in combination with quantum chemical simulations techniques, as well as his effort in active interdisciplinary collaboration with experimental groups. The work has been honoured by several invited presentations, including at international conferences and universities, in addition to regular participation at numerous international conferences and workshops. His current interests extend to machine learning models for atomistic simulations of bio and soft matter systems and modeling of long-range interactions.</p>
+                    </div>
+                </div>
+                <hr>
+                <!-- Raul Ian Sosa -->
+                <div class="row team-member">
+                    <div class="col-sm-3">
+                        <figure>
+                            <img src="assets/img/is.jpg" class="img-fluid z-depth-1 rounded-circle member-img" alt="Raul Ian Sosa">
+                        </figure>
+                    </div>
+                    <div class="col-sm-8 member-info">
+                        <h4>Raul Ian Sosa</h4>
+                        <p>PhD Student</p>
+                        <div class="contact-info">
+                            <a class="chip" href="https://scholar.google.com/citations?user=_QlDgsgAAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar"></i> Google Scholar</a>
+                            <a class="chip" href="mailto:ian.sosa@uni.lu"><i class="fas fa-envelope"></i> Email</a>
+                        </div>
+                        <p class="bio">I'm a physicist, A.I. developer, and entrepreneur from Argentina. I earned my integrated Licentiate degree (equivalent to a BSc+MSc in Physics) from the University of Buenos Aires and the Balseiro Institute, graduating with the highest honors as the valedictorian in 2019. I then completed a MSc degree in Statistical Physics and Chaos in 2021. Since May 2022, I have been pursuing a PhD under the FNR project Quantum Continuum Coupling (QuaC), working with Prof. Alexandre Tkatchenko to develop multiscale modeling techniques that incorporate quantum effects into engineering-scale systems, with a focus on capturing many-body van der Waals interactions.
+
+Alongside academia, I co-founded NeuralWave Technologies, a company focused on A.I.-driven voice synthesis. I also serve on the organizing committee of the European Association for Data Science (EuADS). I enjoy any topic related to deep learning, parallel computing, bioinformatics, and astrophotography!.</p>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- Mathias Hilfiker -->
+                <div class="row team-member">
+                    <div class="col-sm-3">
+                        <figure>
+                            <img src="assets/img/mh.jpg" class="img-fluid z-depth-1 rounded-circle member-img" alt="Mathias Hilfiker">
+                        </figure>
+                    </div>
+                    <div class="col-sm-8 member-info">
+                        <h4>Mathias Hilfiker</h4>
+                        <p>PhD Student</p>
+                        <div class="contact-info">
+                            <a class="chip" href="mailto:mathias.hilfiker@uni.lu"><i class="fas fa-envelope"></i> Email</a>
+                        </div>
+                        <p class="bio">Research Topics: Machine-learned quantum Force Fields for molecule-protein interactions.</p>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- Sergio Suárez-Dou -->
+                <div class="row team-member">
+                    <div class="col-sm-3">
+                        <figure>
+                            <img src="assets/img/ss.jpg" class="img-fluid z-depth-1 rounded-circle member-img" alt="Sergio Suárez-Dou">
+                        </figure>
+                    </div>
+                    <div class="col-sm-8 member-info">
+                        <h4>Sergio Suárez-Dou</h4>
+                        <p>PhD Student</p>
+                        <div class="contact-info">
+                            <a class="chip" href="https://scholar.google.com/citations?user=ubNcXUoAAAAJ&amp;hl=en" target="_blank"><i class="ai ai-google-scholar"></i> Google Scholar</a>
+                            <a class="chip" href="mailto:sergio.suarezdou@uni.lu"><i class="fas fa-envelope"></i> Email</a>
+                        </div>
+                        <p class="bio">My research develops and applies machine-learned force fields (MLFFs) to describe biomolecules with quantum-mechanical accuracy at a fraction of the cost. I develop <a href="https://github.com/TCPUniLU/mars" target="_blank">MARS</a>, a framework built on the SO3LR force field for automated conformational sampling, vibrational spectroscopy and microsolvation, and contribute to QCell, a quantum-mechanical dataset spanning diverse biomolecular fragments. My current work maps the energy landscapes of peptides and peptide ions, connecting minima through transition states to explain their conformational dynamics and to compare directly with gas-phase spectroscopy.</p>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- Tobias Henkes -->
+                <div class="row team-member">
+                    <div class="col-sm-3">
+                        <figure>
+                            <img src="assets/img/tb.jpg" class="img-fluid z-depth-1 rounded-circle member-img" alt="Tobias Henkes">
+                        </figure>
+                    </div>
+                    <div class="col-sm-8 member-info">
+                        <h4>Tobias Henkes</h4>
+                        <p>PhD Student</p>
+                        <div class="contact-info">
+                            <a class="chip" href="https://scholar.google.com/citations?user=LIeaXIwAAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar"></i> Google Scholar</a>
+                            <a class="chip" href="mailto:tobias.henkes@uni.lu"><i class="fas fa-envelope"></i> Email</a>
+                        </div>
+                        <p class="bio">
+As a chemist, my interests lie in the application, analysis, and automation of machine learning models within the field of molecular simulation. After graduating with a B.Sc. in chemistry from Bielefeld University, Germany, I joined the R&D lab of tesa SE in Hamburg. Afterward, I started my master's studies in chemistry at Saarland University, Germany, during which I joined Prof. Dr. Ernzerhof at the Université de Montréal, Canada. Here, I worked on the application of neural networks to density functional theory and novel electronic structure methods. Since my master's thesis, also completed in the TCP group, I have focused my research on machine learning force fields (MLFFs). In addition to the analysis of so-called foundational MLFFs, a large part of my work is concerned with the automatic and efficient construction of MLFF models and datasets using active learning.</p>
+                    </div>
+                </div>
+                <hr>
+
+                    <!-- Giuseppe MANSI -->
+                <div class="row team-member">
+                    <div class="col-sm-3">
+                        <figure>
+                            <img src="assets/img/gm.jpg" class="img-fluid z-depth-1 rounded-circle member-img" alt="Giuseppe Mansi">
+                        </figure>
+                    </div>
+                    <div class="col-sm-8 member-info">
+                        <h4>Giuseppe Mansi</h4>
+                        <p>PhD Student</p>
+                        <div class="contact-info">
+                            <a class="chip" href="mailto:giuseppe.mansi@uni.lu"><i class="fas fa-envelope"></i> Email</a>
+                        </div>
+                        <p class="bio">I am a theoretical physicist with a strong interest in the interface between gravity and quantum mechanics. My Master's degree research was dedicated to semiclassical gravity, where I investigated the J. Oppenheim's approach of stochastic gravity. My current research focus has naturally evolved towards the core principles of quantum mechanics, now working primarily on quantifying and understanding quantum entanglement for multipartite infinite dimensional systems.</p>
+                    </div>
+                </div>
+                <hr>
+
+            </article>
+        </div>
+    </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container mt-0">
+            © Copyright 2026 Theoretical Chemical Physics
+        </div>
+    </footer>
+
+    <script>
+        function handleScroll() {
+            const footer = document.getElementById('footer');
+            const windowHeight = window.innerHeight;
+            const documentHeight = document.documentElement.scrollHeight;
+            const scrollTop = window.scrollY || document.documentElement.scrollTop;
+            
+            // Calculate how close to the bottom we are
+            const scrolledToBottom = (windowHeight + scrollTop) >= (documentHeight - 50);
+            
+            // Show/hide footer based on scroll position
+            if (scrolledToBottom) {
+                footer.classList.add('visible');
+            } else {
+                footer.classList.remove('visible');
+            }
+        }
+
+        // Add scroll event listener
+        window.addEventListener('scroll', handleScroll);
+        
+        // Initial check on page load
+        handleScroll();
+    </script>
+
+    <!-- JavaScripts -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js"></script>
+
+    <!-- Progress Bar Script -->
+    <script>
+        const progressBar = $("#progress");
+        
+        window.onload = function() {
+            setTimeout(progressBarSetup, 50);
+        };
+
+        function progressBarSetup() {
+            initializeProgressElement();
+            $(document).on("scroll", function() {
+                progressBar.attr({ value: getCurrentScrollPosition() });
+            });
+            $(window).on("resize", initializeProgressElement);
+        }
+
+        function getCurrentScrollPosition() {
+            return $(window).scrollTop();
+        }
+
+        function initializeProgressElement() {
+            let navbarHeight = $("#navbar").outerHeight(true);
+            progressBar.attr({
+                max: getDistanceToScroll(),
+                value: getCurrentScrollPosition(),
+            });
+        }
+
+        function getDistanceToScroll() {
+            return $(document).height() - $(window).height();
+        }
+    </script>
+</body>
+</html>
+
+<!-- Code Block new addition 
+
+
+                <div class="row team-member">
+                    <div class="col-sm-3">
+                        <figure>
+                            <img src="assets/img/file.jpg" class="img-fluid z-depth-1 rounded-circle member-img" alt="Name">
+                        </figure>
+                    </div>
+                    <div class="col-sm-8 member-info">
+                        <h4>Name</h4>
+                        <p>Role</p>
+                        <div class="contact-info">
+                            <a class="chip" href="https://scholar.google.com/citations?hl=en&user=oVkngE4AAAAJ" target="_blank"><i class="ai ai-google-scholar"></i> Google Scholar</a>
+                            <a class="chip" href="https://kyunghoon-han.github.io/" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            <a class="chip" href="mailto:name.surname@uni.lu"><i class="fas fa-envelope"></i> Email</a>
+                        </div>
+                        <p class="bio">Current Research ...</p>
+                    </div>
+                </div>
+                <hr>     
+                
+                
+-->
